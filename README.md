@@ -1,9 +1,9 @@
 # Tracp
 
-TRAffic Control in Port level
+TRAffic Control in Port level  
 platform: OSX/Linux
 
-Tracp will handle all packets which gothrough it and redirect them back to lookback.
+Tracp will handle all packets which gothrough it and redirect them back to loopback.
 
 
 # Usage:
@@ -21,7 +21,7 @@ options:
 
 # example
 
-```
+```{shell}
 # go install github.com/chzyer/tracp/cmd/tracpd
 $ sudo tracpd -mindelay 200ms
 $ ping 10.1 # use 10.0.0.1 instead of 127.0.0.1
